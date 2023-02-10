@@ -169,6 +169,9 @@ defmodule Livebook.EnterpriseServer do
       "phx.server"
     ]
 
+    dbg(env)
+    dbg(args)
+
     port =
       Port.open({:spawn_executable, elixir_executable()}, [
         :exit_status,
